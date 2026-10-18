@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milwaukee Mel & DeeJayDezG - Music Discovery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 40px;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff6b6b;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #ff6b6b;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 20px 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+        
+        .artist-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .info-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .info-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .info-card i {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #4ecdc4;
+        }
+        
+        .info-card h3 {
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-card h3 {
+            color: #4ecdc4;
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+        }
+        
+        .social-icon:hover {
+            background: #ff6b6b;
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Milwaukee Mel & DeeJayDezG</div>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#music">Music</a>
+                <a href="#shows">Shows</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        
+        <section class="hero">
+            <h1>Discover the Sound of Milwaukee Mel & DeeJayDezG</h1>
+            <p class="subtitle">Experience the unique musical journey of Milwaukee Mel</p>
+            <a href="https://sparkonepublishing.com" class="cta-button">Explore Music</a>
+            <a href="#about" class="cta-button">Learn More</a>
+        </section>
+        
+        <section class="artist-info">
+            <div class="info-card">
+                <div>🎵</div>
+                <h3>Unique Sound</h3>
+                <p>Blending local influences with modern musical trends to create a distinctive sound that resonates with listeners.</p>
+            </div>
+            
+            <div class="info-card">
+                <div>📍</div>
+                <h3>Milwaukee Roots</h3>
+                <p>Authentic representation of Milwaukee's vibrant music scene and cultural identity.</p>
+            </div>
+            
+            <div class="info-card">
+                <div>🎧</div>
+                <h3>Live Performance</h3>
+                <p>Engaging live shows that bring audiences into the heart of the musical experience.</p>
+            </div>
+        </section>
+        
+        <section class="features">
+            <div class="feature-card">
+                <h3>Latest Releases</h3>
+                <p>Stay updated with Milwaukee Mel's newest tracks and upcoming releases on the official site.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Exclusive Content</h3>
+                <p>Access behind-the-scenes content, acoustic versions, and special performances.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Community</h3>
+                <p>Join a growing community of fans who share a passion for Milwaukee's musical heritage.</p>
+            </div>
+        </section>
+        
+        <div class="social-links">
+            <a href="https://instagram.com/sparkonepublishing" class="social-icon">📸</a>
+            <a href="https://open.spotify.com/artist/7mwyKL55MiMWTgvdcgab68" class="social-icon">🎵</a>
+            <a href="https://youtube.com/DeeJayDezG" class="social-icon">📺</a>
+            <a href="https://twitter.com/DezGee" class="social-icon">🐦</a>
+        </div>
+        
+        <footer>
+            <p>© 2027 Milwaukee Mel & DeeJayDezG All rights reserved.</p>
+            <p>Discover more at <a href="https://sparkonepublishing.com" style="color: #4ecdc4;">sparkonepublishing.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
